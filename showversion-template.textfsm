@@ -1,0 +1,9 @@
+# showversion-template.textfsm
+Value DEVICENAME (.*)
+
+Start
+  ^.*Hardware\s+
+  ^.*cisco\s+
+  ^.*Intel\(\S\)\s+
+  ^.*Processor\(\S\)\s+
+  ^.*Device\s+name:\s+${DEVICENAME} -> Record
